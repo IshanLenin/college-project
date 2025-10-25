@@ -1,0 +1,72 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Navigation Bar */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+nav a:hover { color: yellow; }
+
+/* Intro Section */
+.intro {
+  padding: 30px;
+  text-align: center;
+}
+.banner {
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Form Section */
+.form-section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+fieldset {
+  border: 2px solid #003366;
+  padding: 10px;
+  border-radius: 5px;
+}
+legend {
+  font-weight: bold;
+  color: #003366;
+}
+
+/* Status Page */
+.status-info {
+  background-color: #eef;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  body { font-size: 14px; }
+  nav a { display: block; margin: 5px 0; }
+  .banner { width: 100%; }
+}

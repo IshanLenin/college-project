@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apply for Admission</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Presidency University</h1>
+    <h3>Admission Application Form</h3>
+  </header>
+
+  <section class="form-section">
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        Full Name: <input type="text" name="fullname" required><br><br>
+        Email: <input type="email" name="email" required><br><br>
+        Phone Number: <input type="tel" name="phone" required><br><br>
+        Date of Birth: <input type="date" name="dob"><br><br>
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Academic Details</legend>
+        Program Applied For:
+        <select name="program">
+          <option>B.Tech CSE</option>
+          <option>B.Tech ECE</option>
+          <option>BBA</option>
+          <option>MBA</option>
+        </select><br><br>
+        Upload Marks Sheet:
+        <input type="file" name="marksheet"><br><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Address Details</legend>
+        Address:<br>
+        <textarea rows="3" cols="40" name="address"></textarea><br><br>
+        City: <input type="text" name="city"><br><br>
+        State: <input type="text" name="state"><br><br>
+      </fieldset><br>
+
+      <input type="submit" value="Submit Application">
+      <input type="reset" value="Clear Form">
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Presidency University</p>
+  </footer>
+</body>
+</html>
