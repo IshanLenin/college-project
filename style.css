@@ -1,72 +1,217 @@
 /* General Styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.5; /* Added for better readability */
+}
+
+/* Added to make width: 100% work correctly with padding */
+* {
+  box-sizing: border-box;
 }
 
 /* Header */
 header {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 15px;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+header h1 {
+  margin: 0; /* Remove default margin */
+}
+header h3 {
+  margin: 0;
+  font-weight: 300; /* Make subtitle lighter */
 }
 
 /* Navigation Bar */
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
+nav {
+  background-color: #002244; /* Darker shade for nav */
+  padding: 10px 0;
 }
-nav a:hover { color: yellow; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+nav a:hover { 
+  color: yellow; 
+  text-decoration: underline;
+}
+/* Style for the active page link */
+nav a.active {
+  color: yellow;
+}
 
 /* Intro Section */
 .intro {
-  padding: 30px;
-  text-align: center;
+  padding: 30px;
+  text-align: center;
 }
 .banner {
-  width: 70%;
-  border-radius: 10px;
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 20px; /* Added margin */
 }
 
-/* Form Section */
-.form-section {
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
+/* =================================
+  NEW FORM STYLES (BASIC CSS)
+ ================================= */
+
+/* Container for all forms */
+.form-container {
+  max-width: 700px; /* Set a max width */
+  margin: 30px auto; /* Center the form on the page */
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Soft shadow */
 }
-fieldset {
-  border: 2px solid #003366;
+.form-container h2 {
+  text-align: center;
+  color: #003366;
+  margin-top: 0;
+}
+
+/* Center the login form specifically */
+.login-form {
+  max-width: 400px;
+}
+
+/* Each Label + Input wrapper */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style for the labels */
+.form-group label {
+  display: block; /* Makes label stack on top of input */
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Stop radio labels from stacking */
+.form-group label.radio-label {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+/* Style for all text inputs, textareas, and selects */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+textarea,
+select {
+  width: 100%; /* Make inputs fill the container */
   padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for file input */
+input[type="file"] {
+  padding: 5px;
+}
+
+/* Style for fieldsets */
+fieldset {
+  border: 2px solid #003366;
+  padding: 20px; /* Increased padding */
+  border-radius: 5px;
+  margin-bottom: 20px; /* Added space between fieldsets */
 }
 legend {
-  font-weight: bold;
-  color: #003366;
+  font-weight: bold;
+  color: #003366;
+  font-size: 1.2em; /* Make legend bigger */
+  padding: 0 10px; /* Add spacing */
 }
+
+/* Style for buttons */
+.btn {
+  background-color: #003366;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #0055aa;
+}
+
+/* A secondary button style (for Reset) */
+.btn.btn-alt {
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.btn.btn-alt:hover {
+  background-color: #e0e0e0;
+}
+
+/* =================================
+  END OF NEW FORM STYLES
+ ================================= */
+
 
 /* Status Page */
 .status-info {
-  background-color: #eef;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 10px;
+  /* Using the same style as form-container for consistency */
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: #eef;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #cce;
+}
+.status-info h3 {
+  margin-top: 0;
+  color: #003366;
+}
+.status-info ul {
+  list-style-type: none; /* Remove bullets */
+  padding-left: 0;
+}
+.status-info li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 10px;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px; /* Increased padding */
+  margin-top: 40px; /* Add space above footer */
 }
 
-/* Responsive Design */
+/* Responsive Design (Your original code is good) */
 @media only screen and (max-width: 600px) {
-  body { font-size: 14px; }
-  nav a { display: block; margin: 5px 0; }
-  .banner { width: 100%; }
+  body { font-size: 14px; }
+  /* Make nav links stack */
+  nav a { 
+    display: block; 
+    margin: 10px 0; 
+    text-align: center;
+  }
+  .banner { width: 100%; }
+  /* Make forms fill the screen */
+  .form-container {
+    margin: 10px;
+    padding: 20px;
+  }
 }

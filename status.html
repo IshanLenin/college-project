@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Application Status</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Application Status</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Check Admission Status</h1>
-  </header>
+  <header>
+    <h1>Presidency University</h1>
+    <h3>Admission Management System</h3>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="apply.html">Apply Now</a>
+            <a href="status.html" class="active">Check Status</a>
+      <a href="admin.html">Admin Login</a>
+    </nav>
+  </header>
 
-  <section class="status">
-    <form>
-      Application Number: <input type="text" name="appno" required><br><br>
-      <input type="submit" value="Check Status">
-    </form>
+    <section class="form-container">
+    <h2>Check Admission Status</h2>
+    <form>
+      <div class="form-group">
+        <label for="appno">Application Number:</label>
+        <input type="text" id="appno" name="appno" required>
+      </div>
+      <input type="submit" value="Check Status" class="btn">
+    </form>
+  </section>
 
-    <div class="status-info">
-      <h3>Status Updates</h3>
-      <ul>
-        <li>Application Submitted</li>
-        <li>Documents Verified</li>
-        <li>Shortlisted for Interview</li>
-        <li>Admission Confirmed</li>
-      </ul>
-    </div>
-  </section>
+    <section class="status-info">
+    <h3>Your Static Status Example</h3>
+    <p>Application #12345</p>
+    <ul>
+      <li>✅ Application Submitted</li>
+      <li>✅ Documents Verified</li>
+      <li>⏳ Shortlisted for Interview</li>
+      <li>(Pending) Admission Confirmed</li>
+    </ul>
+  </section>
 
-  <footer>
-    <p>© 2025 Presidency University</p>
-  </footer>
+  <footer>
+    <p>© 2025 Presidency University</p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apply for Admission</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Presidency University</h1>
+    <h3>Admission Management System</h3>
+    <nav>
+      <a href="index.html">Home</a>
+            <a href="apply.html" class="active">Apply Now</a>
+      <a href="status.html">Check Status</a>
+      <a href="admin.html">Admin Login</a>
+    </nav>
+  </header>
+
+    <section class="form-container">
+    <h2>Admission Application Form</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+        
+        <div class="form-group">
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="Male" id="male"> 
+          <label class="radio-label" for="male">Male</label>
+          <input type="radio" name="gender" value="Female" id="female"> 
+          <label class="radio-label" for="female">Female</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Academic Details</legend>
+
+        <div class="form-group">
+          <label for="program">Program Applied For:</label>
+          <select id="program" name="program">
+            <option>B.Tech CSE</option>
+            <option>B.Tech ECE</option>
+            <option>BBA</option>
+            <option>MBA</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="marksheet">Upload Marks Sheet:</label>
+          <input type="file" id="marksheet" name="marksheet">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Address Details</legend>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea rows="3" cols="40" id="address" name="address"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city">
+        </div>
+
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state">
+        </div>
+      </fieldset>
+
+      <div class="form-buttons">
+        <input type="submit" value="Submit Application" class="btn">
+        <input type="reset" value="Clear Form" class="btn btn-alt">
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Presidency University</p>
+  </footer>
+</body>
+</html>
