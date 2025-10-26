@@ -1,11 +1,11 @@
 /* General Styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.5; /* Added for better readability */
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.5; /* Added for better readability */
+    }
 
 /* Added to make width: 100% work correctly with padding */
 * {
@@ -14,10 +14,10 @@ body {
 
 /* Header */
 header {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 15px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 header h1 {
   margin: 0; /* Remove default margin */
@@ -33,10 +33,10 @@ nav {
   padding: 10px 0;
 }
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
 }
 nav a:hover { 
   color: yellow; 
@@ -49,13 +49,13 @@ nav a.active {
 
 /* Intro Section */
 .intro {
-  padding: 30px;
-  text-align: center;
+    padding: 30px;
+    text-align: center;
 }
 .banner {
-  width: 70%;
-  border-radius: 10px;
-  margin-top: 20px; /* Added margin */
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 20px; /* Added margin */
 }
 
 /* =================================
@@ -64,12 +64,12 @@ nav a.active {
 
 /* Container for all forms */
 .form-container {
-  max-width: 700px; /* Set a max width */
-  margin: 30px auto; /* Center the form on the page */
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Soft shadow */
+    max-width: 700px; /* Set a max width */
+    margin: 30px auto; /* Center the form on the page */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Soft shadow */
 }
 .form-container h2 {
   text-align: center;
@@ -125,16 +125,16 @@ input[type="file"] {
 
 /* Style for fieldsets */
 fieldset {
-  border: 2px solid #003366;
-  padding: 20px; /* Increased padding */
-  border-radius: 5px;
-  margin-bottom: 20px; /* Added space between fieldsets */
+    border: 2px solid #003366;
+    padding: 20px; /* Increased padding */
+    border-radius: 5px;
+    margin-bottom: 20px; /* Added space between fieldsets */
 }
 legend {
-  font-weight: bold;
-  color: #003366;
-  font-size: 1.2em; /* Make legend bigger */
-  padding: 0 10px; /* Add spacing */
+    font-weight: bold;
+    color: #003366;
+    font-size: 1.2em; /* Make legend bigger */
+    padding: 0 10px; /* Add spacing */
 }
 
 /* Style for buttons */
@@ -170,12 +170,12 @@ legend {
 /* Status Page */
 .status-info {
   /* Using the same style as form-container for consistency */
-  max-width: 700px;
-  margin: 30px auto;
-  background-color: #eef;
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid #cce;
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: #eef;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #cce;
 }
 .status-info h3 {
   margin-top: 0;
@@ -192,26 +192,34 @@ legend {
 
 /* Footer */
 footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 20px; /* Increased padding */
-  margin-top: 40px; /* Add space above footer */
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Increased padding */
+    margin-top: 40px; /* Add space above footer */
 }
 
 /* Responsive Design (Your original code is good) */
 @media only screen and (max-width: 600px) {
-  body { font-size: 14px; }
-  /* Make nav links stack */
-  nav a { 
+    body { font-size: 14px; }
+  /* Make nav links stack */ 
+    nav a { 
     display: block; 
     margin: 10px 0; 
     text-align: center;
   }
-  .banner { width: 100%; }
-  /* Make forms fill the screen */
-  .form-container {
-    margin: 10px;
-    padding: 20px;
-  }
+   .banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 40px;    /* More space on top */
+    margin-bottom: 30px; /* Adds space below the image */
+}
+
+.form-container {
+  margin: 10px;
+  padding: 20px;
+}
 }
